@@ -1,0 +1,54 @@
+LEEME - INSTRUCCIONES DE RECUPERACIÓN
+
+1. RECUPERAR LO QUE YA COPIASTE (IMPORTANTE)
+   -------------------------------------------------
+   Lamentablemente, por seguridad, Windows no permite a programas externos leer el historial antiguo fácilmente sin configuraciones previas.
+   
+   LA SOLUCIÓN RÁPIDA:
+   -> Presiona la tecla "Windows" + "V" al mismo tiempo.
+   
+   - Si aparece una ventanita con una lista: ¡Ahí están tus copias! Haz clic en la que quieras pegar.
+   - Si dice "Activar": Significa que el historial estaba apagado y NO se guardaron tus copias anteriores. No hay forma de recuperarlas en este caso :(
+
+2. EVITAR QUE PASE DE NUEVO (MONITOR)
+   -------------------------------------------------
+   He creado un pequeño programa que vigila lo que copias y lo guarda en un archivo de texto para siempre.
+   
+   Para usarlo:
+   1. Haz clic derecho en el archivo "monitor_portapapeles.ps1"
+   2. Elige "Ejecutar con PowerShell"
+   3. Verás una ventana azul/negra que dice "Iniciando monitor...". Minimízala (no la cierres).
+   4. Todo lo que copies (Ctrl+C) se guardará automáticamente en el archivo "historial_portapapeles.txt" en esta misma carpeta, con fecha y hora.
+
+   Así nunca más perderás un texto copiado.
+
+3. REGISTRAR CLICS Y SCROLL (NUEVO)
+   -------------------------------------------------
+   También puedes grabar todo lo que haces con el mouse (clics, coordenadas, scroll).
+   
+   Para usarlo:
+   1. Haz clic derecho en "monitor_mouse.ps1"
+   2. Elige "Ejecutar con PowerShell"
+   3. Se abrirá otra ventana. Mantenla abierta.
+   4. Tus movimientos se guardarán en "historial_clicks.txt".
+
+4. RESPALDO DE CAPTURAS DE PANTALLA (NUEVO)
+   -------------------------------------------------
+   Cada vez que copies una imagen o presiones "Impr Pant":
+   - Se guardará automáticamente en la carpeta "capturas".
+   - Archivo tipo: captura_FECHA_HORA.png
+   - Ejecuta "monitor_capturas.ps1" para activarlo.
+
+5. HERRAMIENTA DE RECORTES (GUI)
+   -------------------------------------------------
+   Tu propia herramienta estilo "Recortes" avanzada.
+   
+   - REQUISITO: Ejecuta "editor_capturas.ps1" primero (ya lo dejé corriendo).
+   - ACTIVAR: Presiona las teclas [Windows] + [Ctrl] + [Impr Pant] (PrintScreen).
+   - QUÉ SUCEDE:
+     1. La pantalla se congela con tu captura.
+     2. Dibuja un cuadro rojo con el mouse sobre lo que quieres.
+     3. ¡LISTO! Al soltar el mouse:
+        -> Se guarda AUTOMÁTICAMENTE en la carpeta "recortes".
+        -> Se copia AUTOMÁTICAMENTE al portapapeles (para pegar con Ctrl+V).
+     4. Presiona "Esc" o el botón rojo para cancelar sin guardar.
